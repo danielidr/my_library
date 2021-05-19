@@ -31,12 +31,12 @@
 
     <div class="form-group col">
       <%= form.label :lend_date %>
-      <%= form.date_select :lend_date %>
+      <%= form.date_select :lend_date , {:include_blank => true, :default => nil} %>
     </div>
   
     <div class="form-group col">
       <%= form.label :returned_date%>
-      <%= form.date_select :returned_date%>
+      <%= form.date_select :returned_date, {:include_blank => true, :default => nil} %>
     </div>
 
   </div>
